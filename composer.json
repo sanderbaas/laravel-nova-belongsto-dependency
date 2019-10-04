@@ -1,0 +1,30 @@
+{
+    "name": "sanderbaas/laravel-nova-belongsto-dependency",
+    "description": "Extend Laravel Nova so that searchable BelongsTo fields can be filtered by values of other fields",
+    "keywords": [
+        "laravel",
+        "nova",
+        "dependency"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "SanderBaas\\BelongsToDependency\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SanderBaas\\BelongsToDependency\\FieldServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
