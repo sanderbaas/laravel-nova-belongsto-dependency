@@ -11,7 +11,7 @@ is searchable.
 You can install this package on a Laravel app that uses [Nova](https://nova.laravel.com) via composer:
 
 ```bash
-composer require sanderbaas/laravel-nova-belongs-to-dependency
+composer require sanderbaas/laravel-nova-belongsto-dependency
 ```
 
 ## Usage
