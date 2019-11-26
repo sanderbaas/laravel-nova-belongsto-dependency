@@ -6,7 +6,7 @@ Nova.booting((Vue, router) => {
                     var selectedFields = {};
                     var ignoreFieldTypes = ['form-textarea-field'];
                     if (this && this.$parent && this.$parent.$children) {
-                        this.$parent.$children.foreEach(function(child){
+                        this.$parent.$children.forEach(function(child){
                             if (ignoreFieldTypes.indexOf(child.$options._componentTag)>-1) {
                                 return;
                             }
