@@ -35,6 +35,10 @@ correct employees as follows:
 ```php
 public static function relatableQuery(NovaRequest $request, $query)
 {
+    if($request->isCreateOrAttachRequest() || $request->isUpdateOrUpdateAttachedRequest()) {
+        return $query;
+    }
+
     $query->where('company_id', '=', $request->selectedCompany);
     return $query;
 }
